@@ -80,6 +80,12 @@
     
 
 
+    <!-- http://www.wright.edu/CS7810#hasAddress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.wright.edu/CS7810#hasAddress"/>
+    
+
+
     <!-- http://www.wright.edu/CS7810#hasCandidateId -->
 
     <owl:DatatypeProperty rdf:about="http://www.wright.edu/CS7810#hasCandidateId"/>
@@ -225,7 +231,21 @@
 
     <!-- http://www.wright.edu/CS7810#Committee -->
 
-    <owl:Class rdf:about="http://www.wright.edu/CS7810#Committee"/>
+    <owl:Class rdf:about="http://www.wright.edu/CS7810#Committee">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.wright.edu/CS7810#hasCommitteeName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.wright.edu/CS7810#hasCommitteeId"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
     
 
 

@@ -48,6 +48,10 @@
 :atTime rdf:type owl:DatatypeProperty .
 
 
+###  http://www.wright.edu/CS7810#hasAddress
+:hasAddress rdf:type owl:DatatypeProperty .
+
+
 ###  http://www.wright.edu/CS7810#hasCandidateId
 :hasCandidateId rdf:type owl:DatatypeProperty .
 
@@ -141,7 +145,16 @@
 
 
 ###  http://www.wright.edu/CS7810#Committee
-:Committee rdf:type owl:Class .
+:Committee rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasCommitteeName ;
+                                 owl:someValuesFrom xsd:string
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasCommitteeId ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:string
+                               ] .
 
 
 ###  http://www.wright.edu/CS7810#CommitteeRole

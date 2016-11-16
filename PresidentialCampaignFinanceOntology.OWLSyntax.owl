@@ -114,6 +114,9 @@
         <DataProperty IRI="#hasCommitteeId"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#hasAddress"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#hasState"/>
     </Declaration>
     <Declaration>
@@ -122,6 +125,20 @@
     <Declaration>
         <DataProperty IRI="#hasContributorId"/>
     </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Committee"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasCommitteeName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Committee"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasCommitteeId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#PresidentialElection"/>
         <Class IRI="#Election"/>

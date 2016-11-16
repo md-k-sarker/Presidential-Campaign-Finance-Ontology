@@ -9,6 +9,9 @@ Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
 Ontology: <http://www.wright.edu/CS7810>
 
 
+Datatype: xsd:string
+
+    
 ObjectProperty: <http://www.wright.edu/CS7810#hasContribution>
 
     
@@ -31,6 +34,9 @@ DataProperty: <http://www.wright.edu/CS7810#atPlace>
 
     
 DataProperty: <http://www.wright.edu/CS7810#atTime>
+
+    
+DataProperty: <http://www.wright.edu/CS7810#hasAddress>
 
     
 DataProperty: <http://www.wright.edu/CS7810#hasCandidateId>
@@ -101,6 +107,10 @@ Class: <http://www.wright.edu/CS7810#CandidateRole>
     
 Class: <http://www.wright.edu/CS7810#Committee>
 
+    EquivalentTo: 
+        <http://www.wright.edu/CS7810#hasCommitteeName> some xsd:string,
+        <http://www.wright.edu/CS7810#hasCommitteeId> exactly 1 xsd:string
+    
     
 Class: <http://www.wright.edu/CS7810#CommitteeRole>
 
