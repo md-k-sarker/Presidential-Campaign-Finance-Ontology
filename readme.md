@@ -29,4 +29,4 @@ Contributor, Candidate, Contribution, Committee, Election, Presidential Election
 
 
 ####Data Source: <a href="http://www.fec.gov/disclosurep/PDownload.do">Finacial Data</a>
-####Data Format Description: <a href="ftp://ftp.fec.gov/FEC/Presidential_Map/2016/DATA_DICTIONARIES/CONTRIBUTOR_FORMAT.txt"> Data Format </a>
+####Data Format Description: <a href="https://goo.gl/vXEqBn"> Data Format </a>
