@@ -27,6 +27,11 @@ List the PAC based on different sector it belongs to (Eg; Banking, Education, In
 Contributor, Candidate, Contribution, Committee, Election, Presidential Election, Campaign. 
 
 
+##Diagram
+
+<img src="https://github.com/md-k-sarker/Presidential-Campaign-Finance-Ontology/raw/master/CS7810Ver3.jpg"></img>
+
+
 
 ####Data Source: <a href="http://www.fec.gov/disclosurep/PDownload.do">Finacial Data</a>
 ####Data Format Description: <a href="https://goo.gl/vXEqBn"> Data Format </a>
