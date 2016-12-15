@@ -2,29 +2,39 @@
 
 
 ###Competency Questions:
-How much did Stephen Roadfeldt contribute to Donald Trump on Sep 1, 2016?
+- How much did Stephen Roadfeldt contribute to Donald Trump on Sep 1, 2016?
 
-How much did Donald Trump receive from contributors on Sep 1, 2016?
+– How much did Donald Trump receive from contributors on Sep 1, 2016?
 
-Which candidate received the most contribution on Sep 1, 2016?
+– What is the maximum amount of donation received by any candidate?
 
-List of candidates who collected funds for Presidential Election in 2016.
+– What is the maximum amount of donation received by a certain candidate?
 
-How many contributors does Donald Trump have on Sep 1, 2016?
+– Which candidate/s received the highest contribution on a certain date?
 
-List all the valid political committee participated in the election of 2016. (How do we know if a PAC is valid or not?)
+– List of candidates who collected funds for Presidential Election in 2016.
 
-What is the maximum,minimum contribution amount by a certain PAC for each candidate in 2016?
+– How many contributors contributed to Donald Trump’s campaign on Sep 1, 2016?
 
-For each state find the list of registered PAC.
+– List all the political committees affiliated with a certain candidate that participated in the election of 2016.
 
-Calculate the aggregate contribution of each PAC from the first presidential election to election of 2016.
+– Calculate the aggregated contribution of each committee.
 
-List the PAC based on different sector it belongs to (Eg; Banking, Education, Industry etc). (PAC or Contributor?)
+– List total amount of contribution to each candidate made by different contributors in 2016.
+
+– State wise which candidate had the maximum number of contributors in 2016.
 
 
 ###Modeling Key Notions:
-Contributor, Candidate, Contribution, Committee, Election, Presidential Election, Campaign. 
+<ul>
+<li>Election</li>
+<li>Presidential Election</li>
+<li>Campaign Finance</li>
+<li>Contribution</li>
+<li>Contributor</li>
+<li>Candidate</li>
+<li>Committee</li>
+</ul> 
 
 
 ##Diagram
