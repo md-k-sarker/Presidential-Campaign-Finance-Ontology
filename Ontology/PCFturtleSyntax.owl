@@ -1,0 +1,1245 @@
+@prefix : <http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix untitled-ontology-28: <http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#> .
+@base <http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28> .
+
+<http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#ProvideContributorRole
+untitled-ontology-28:ProvideContributorRole rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#hasContribution
+untitled-ontology-28:hasContribution rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#isAffiliatedWith
+untitled-ontology-28:isAffiliatedWith rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#performedBy
+untitled-ontology-28:performedBy rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#provideCandidateRole
+untitled-ontology-28:provideCandidateRole rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#provideCommitteeRole
+untitled-ontology-28:provideCommitteeRole rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#provides
+untitled-ontology-28:provides rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#subEventOf
+untitled-ontology-28:subEventOf rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#atPlace
+untitled-ontology-28:atPlace rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#atTime
+untitled-ontology-28:atTime rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#hasAddress
+untitled-ontology-28:hasAddress rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#hasCandidateID
+untitled-ontology-28:hasCandidateID rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#hasCity
+untitled-ontology-28:hasCity rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#hasCommitteeID
+untitled-ontology-28:hasCommitteeID rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#hasContributionDate
+untitled-ontology-28:hasContributionDate rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#hasElectionType
+untitled-ontology-28:hasElectionType rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#hasEmployer
+untitled-ontology-28:hasEmployer rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#hasFileNumber
+untitled-ontology-28:hasFileNumber rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#hasFormType
+untitled-ontology-28:hasFormType rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#hasName
+untitled-ontology-28:hasName rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#hasOccupation
+untitled-ontology-28:hasOccupation rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#hasReceiptAmount
+untitled-ontology-28:hasReceiptAmount rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#hasState
+untitled-ontology-28:hasState rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#hasTransactionID
+untitled-ontology-28:hasTransactionID rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#hasZipCode
+untitled-ontology-28:hasZipCode rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#Agent
+untitled-ontology-28:Agent rdf:type owl:Class ;
+                           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                             owl:onProperty untitled-ontology-28:provides ;
+                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass untitled-ontology-28:AgentRole
+                                           ] .
+
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#AgentRole
+untitled-ontology-28:AgentRole rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#CampaignFinance
+untitled-ontology-28:CampaignFinance rdf:type owl:Class ;
+                                     rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                       owl:onProperty untitled-ontology-28:hasContribution ;
+                                                       owl:someValuesFrom untitled-ontology-28:Contribution
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty untitled-ontology-28:provideCandidateRole ;
+                                                       owl:someValuesFrom untitled-ontology-28:CandidateRole
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty untitled-ontology-28:provideCommitteeRole ;
+                                                       owl:someValuesFrom untitled-ontology-28:CommitteeRole
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty untitled-ontology-28:subEventOf ;
+                                                       owl:allValuesFrom untitled-ontology-28:PresidentialElection
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty untitled-ontology-28:subEventOf ;
+                                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                       owl:onClass untitled-ontology-28:PresidentialElection
+                                                     ] ;
+                                     owl:disjointWith untitled-ontology-28:Candidate ,
+                                                      untitled-ontology-28:CandidateRole ,
+                                                      untitled-ontology-28:Committee ,
+                                                      untitled-ontology-28:CommitteeRole ,
+                                                      untitled-ontology-28:Contribution ,
+                                                      untitled-ontology-28:Contributor ,
+                                                      untitled-ontology-28:ContributorRole ,
+                                                      untitled-ontology-28:Election ,
+                                                      untitled-ontology-28:PresidentialElection .
+
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#Candidate
+untitled-ontology-28:Candidate rdf:type owl:Class ;
+                               rdfs:subClassOf untitled-ontology-28:Agent ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty [ owl:inverseOf untitled-ontology-28:isAffiliatedWith
+                                                                ] ;
+                                                 owl:someValuesFrom untitled-ontology-28:Committee
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty [ owl:inverseOf untitled-ontology-28:performedBy
+                                                                ] ;
+                                                 owl:someValuesFrom untitled-ontology-28:CandidateRole
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty [ owl:inverseOf untitled-ontology-28:isAffiliatedWith
+                                                                ] ;
+                                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onClass untitled-ontology-28:Committee
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty [ owl:inverseOf untitled-ontology-28:isAffiliatedWith
+                                                                ] ;
+                                                 owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty [ owl:inverseOf untitled-ontology-28:performedBy
+                                                                ] ;
+                                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onClass untitled-ontology-28:CandidateRole
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty [ owl:inverseOf untitled-ontology-28:performedBy
+                                                                ] ;
+                                                 owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty untitled-ontology-28:hasCandidateID ;
+                                                 owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty untitled-ontology-28:hasName ;
+                                                 owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                               ] ;
+                               owl:disjointWith untitled-ontology-28:CandidateRole ,
+                                                untitled-ontology-28:Committee ,
+                                                untitled-ontology-28:CommitteeRole ,
+                                                untitled-ontology-28:Contribution ,
+                                                untitled-ontology-28:Contributor ,
+                                                untitled-ontology-28:ContributorRole ,
+                                                untitled-ontology-28:Election ,
+                                                untitled-ontology-28:PresidentialElection .
+
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#CandidateRole
+untitled-ontology-28:CandidateRole rdf:type owl:Class ;
+                                   rdfs:subClassOf untitled-ontology-28:AgentRole ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty [ owl:inverseOf untitled-ontology-28:provideCandidateRole
+                                                                    ] ;
+                                                     owl:someValuesFrom untitled-ontology-28:CampaignFinance
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty untitled-ontology-28:performedBy ;
+                                                     owl:allValuesFrom untitled-ontology-28:Candidate
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty untitled-ontology-28:performedBy ;
+                                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                     owl:onClass untitled-ontology-28:Candidate
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty untitled-ontology-28:performedBy ;
+                                                     owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty [ owl:inverseOf untitled-ontology-28:provideCandidateRole
+                                                                    ] ;
+                                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                     owl:onClass untitled-ontology-28:CampaignFinance
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty [ owl:inverseOf untitled-ontology-28:provideCandidateRole
+                                                                    ] ;
+                                                     owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                   ] ;
+                                   owl:disjointWith untitled-ontology-28:Committee ,
+                                                    untitled-ontology-28:CommitteeRole ,
+                                                    untitled-ontology-28:Contribution ,
+                                                    untitled-ontology-28:Contributor ,
+                                                    untitled-ontology-28:ContributorRole ,
+                                                    untitled-ontology-28:Election ,
+                                                    untitled-ontology-28:PresidentialElection .
+
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#Committee
+untitled-ontology-28:Committee rdf:type owl:Class ;
+                               rdfs:subClassOf untitled-ontology-28:Agent ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty untitled-ontology-28:isAffiliatedWith ;
+                                                 owl:someValuesFrom untitled-ontology-28:Candidate
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty [ owl:inverseOf untitled-ontology-28:performedBy
+                                                                ] ;
+                                                 owl:someValuesFrom untitled-ontology-28:CommitteeRole
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty untitled-ontology-28:isAffiliatedWith ;
+                                                 owl:allValuesFrom untitled-ontology-28:Candidate
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty untitled-ontology-28:isAffiliatedWith ;
+                                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onClass untitled-ontology-28:Candidate
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty untitled-ontology-28:isAffiliatedWith ;
+                                                 owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty [ owl:inverseOf untitled-ontology-28:performedBy
+                                                                ] ;
+                                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onClass untitled-ontology-28:CommitteeRole
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty [ owl:inverseOf untitled-ontology-28:performedBy
+                                                                ] ;
+                                                 owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty untitled-ontology-28:hasAddress ;
+                                                 owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty untitled-ontology-28:hasCity ;
+                                                 owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty untitled-ontology-28:hasCommitteeID ;
+                                                 owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty untitled-ontology-28:hasName ;
+                                                 owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty untitled-ontology-28:hasState ;
+                                                 owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty untitled-ontology-28:hasZipCode ;
+                                                 owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                               ] ;
+                               owl:disjointWith untitled-ontology-28:CommitteeRole ,
+                                                untitled-ontology-28:Contribution ,
+                                                untitled-ontology-28:Contributor ,
+                                                untitled-ontology-28:ContributorRole ,
+                                                untitled-ontology-28:Election ,
+                                                untitled-ontology-28:PresidentialElection .
+
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#CommitteeRole
+untitled-ontology-28:CommitteeRole rdf:type owl:Class ;
+                                   rdfs:subClassOf untitled-ontology-28:AgentRole ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty untitled-ontology-28:performedBy ;
+                                                     owl:someValuesFrom untitled-ontology-28:Committee
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty [ owl:inverseOf untitled-ontology-28:provideCommitteeRole
+                                                                    ] ;
+                                                     owl:someValuesFrom untitled-ontology-28:CampaignFinance
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty untitled-ontology-28:performedBy ;
+                                                     owl:allValuesFrom untitled-ontology-28:Committee
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty untitled-ontology-28:performedBy ;
+                                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                     owl:onClass untitled-ontology-28:Committee
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty untitled-ontology-28:performedBy ;
+                                                     owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty [ owl:inverseOf untitled-ontology-28:provideCommitteeRole
+                                                                    ] ;
+                                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                     owl:onClass untitled-ontology-28:CampaignFinance
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty [ owl:inverseOf untitled-ontology-28:provideCommitteeRole
+                                                                    ] ;
+                                                     owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                   ] ;
+                                   owl:disjointWith untitled-ontology-28:Contribution ,
+                                                    untitled-ontology-28:Contributor ,
+                                                    untitled-ontology-28:ContributorRole ,
+                                                    untitled-ontology-28:Election ,
+                                                    untitled-ontology-28:PresidentialElection .
+
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#Contribution
+untitled-ontology-28:Contribution rdf:type owl:Class ;
+                                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                    owl:onProperty untitled-ontology-28:ProvideContributorRole ;
+                                                    owl:someValuesFrom untitled-ontology-28:ContributorRole
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty [ owl:inverseOf untitled-ontology-28:hasContribution
+                                                                   ] ;
+                                                    owl:someValuesFrom untitled-ontology-28:CampaignFinance
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty untitled-ontology-28:ProvideContributorRole ;
+                                                    owl:allValuesFrom untitled-ontology-28:ContributorRole
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty untitled-ontology-28:ProvideContributorRole ;
+                                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                    owl:onClass untitled-ontology-28:ContributorRole
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty untitled-ontology-28:ProvideContributorRole ;
+                                                    owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty [ owl:inverseOf untitled-ontology-28:hasContribution
+                                                                   ] ;
+                                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                    owl:onClass untitled-ontology-28:CampaignFinance
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty [ owl:inverseOf untitled-ontology-28:hasContribution
+                                                                   ] ;
+                                                    owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty untitled-ontology-28:hasContributionDate ;
+                                                    owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty untitled-ontology-28:hasFileNumber ;
+                                                    owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty untitled-ontology-28:hasFormType ;
+                                                    owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty untitled-ontology-28:hasReceiptAmount ;
+                                                    owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty untitled-ontology-28:hasTransactionID ;
+                                                    owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                  ] ;
+                                  owl:disjointWith untitled-ontology-28:Contributor ,
+                                                   untitled-ontology-28:ContributorRole ,
+                                                   untitled-ontology-28:Election ,
+                                                   untitled-ontology-28:PresidentialElection .
+
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#Contributor
+untitled-ontology-28:Contributor rdf:type owl:Class ;
+                                 rdfs:subClassOf untitled-ontology-28:Agent ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty [ owl:inverseOf untitled-ontology-28:performedBy
+                                                                  ] ;
+                                                   owl:someValuesFrom untitled-ontology-28:ContributorRole
+                                                 ] ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty [ owl:inverseOf untitled-ontology-28:performedBy
+                                                                  ] ;
+                                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                   owl:onClass untitled-ontology-28:ContributorRole
+                                                 ] ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty [ owl:inverseOf untitled-ontology-28:performedBy
+                                                                  ] ;
+                                                   owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                 ] ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty untitled-ontology-28:hasCity ;
+                                                   owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                 ] ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty untitled-ontology-28:hasEmployer ;
+                                                   owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                 ] ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty untitled-ontology-28:hasName ;
+                                                   owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                 ] ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty untitled-ontology-28:hasOccupation ;
+                                                   owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                 ] ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty untitled-ontology-28:hasState ;
+                                                   owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                 ] ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty untitled-ontology-28:hasZipCode ;
+                                                   owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                 ] ;
+                                 owl:disjointWith untitled-ontology-28:ContributorRole ,
+                                                  untitled-ontology-28:Election ,
+                                                  untitled-ontology-28:PresidentialElection .
+
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#ContributorRole
+untitled-ontology-28:ContributorRole rdf:type owl:Class ;
+                                     rdfs:subClassOf untitled-ontology-28:AgentRole ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty untitled-ontology-28:performedBy ;
+                                                       owl:someValuesFrom untitled-ontology-28:Contributor
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty [ owl:inverseOf untitled-ontology-28:ProvideContributorRole
+                                                                      ] ;
+                                                       owl:someValuesFrom untitled-ontology-28:Contribution
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty untitled-ontology-28:performedBy ;
+                                                       owl:allValuesFrom untitled-ontology-28:Contributor
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty untitled-ontology-28:performedBy ;
+                                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                       owl:onClass untitled-ontology-28:Contributor
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty untitled-ontology-28:performedBy ;
+                                                       owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty [ owl:inverseOf untitled-ontology-28:ProvideContributorRole
+                                                                      ] ;
+                                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                       owl:onClass untitled-ontology-28:Contribution
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty [ owl:inverseOf untitled-ontology-28:ProvideContributorRole
+                                                                      ] ;
+                                                       owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                     ] ;
+                                     owl:disjointWith untitled-ontology-28:Election ,
+                                                      untitled-ontology-28:PresidentialElection .
+
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#Election
+untitled-ontology-28:Election rdf:type owl:Class ;
+                              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                owl:onProperty untitled-ontology-28:atPlace ;
+                                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty untitled-ontology-28:atTime ;
+                                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                              ] .
+
+
+###  http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#PresidentialElection
+untitled-ontology-28:PresidentialElection rdf:type owl:Class ;
+                                          rdfs:subClassOf untitled-ontology-28:Election ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty [ owl:inverseOf untitled-ontology-28:subEventOf
+                                                                           ] ;
+                                                            owl:someValuesFrom untitled-ontology-28:CampaignFinance
+                                                          ] ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty [ owl:inverseOf untitled-ontology-28:subEventOf
+                                                                           ] ;
+                                                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                            owl:onClass untitled-ontology-28:CampaignFinance
+                                                          ] ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty [ owl:inverseOf untitled-ontology-28:subEventOf
+                                                                           ] ;
+                                                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                          ] .
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+owl:Thing rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:ProvideContributorRole ;
+                            owl:allValuesFrom untitled-ontology-28:ContributorRole
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:hasContribution ;
+                            owl:allValuesFrom untitled-ontology-28:Contribution
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:isAffiliatedWith ;
+                            owl:allValuesFrom untitled-ontology-28:Candidate
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:performedBy ;
+                            owl:allValuesFrom untitled-ontology-28:Candidate
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:performedBy ;
+                            owl:allValuesFrom untitled-ontology-28:Committee
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:performedBy ;
+                            owl:allValuesFrom untitled-ontology-28:Contributor
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:provideCandidateRole ;
+                            owl:allValuesFrom untitled-ontology-28:CandidateRole
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:provideCommitteeRole ;
+                            owl:allValuesFrom untitled-ontology-28:CommitteeRole
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:subEventOf ;
+                            owl:allValuesFrom untitled-ontology-28:PresidentialElection
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:ProvideContributorRole ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass untitled-ontology-28:ContributorRole
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:ProvideContributorRole ;
+                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:hasContribution ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass untitled-ontology-28:Contribution
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:hasContribution ;
+                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:isAffiliatedWith ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass untitled-ontology-28:Candidate
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:isAffiliatedWith ;
+                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:performedBy ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass untitled-ontology-28:Candidate
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:performedBy ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass untitled-ontology-28:Committee
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:performedBy ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass untitled-ontology-28:Contributor
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:performedBy ;
+                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:provideCandidateRole ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass untitled-ontology-28:CandidateRole
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:provideCandidateRole ;
+                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:provideCommitteeRole ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass untitled-ontology-28:CommitteeRole
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:provideCommitteeRole ;
+                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:subEventOf ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass untitled-ontology-28:PresidentialElection
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:subEventOf ;
+                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty [ owl:inverseOf untitled-ontology-28:ProvideContributorRole
+                                           ] ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass untitled-ontology-28:Contribution
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty [ owl:inverseOf untitled-ontology-28:ProvideContributorRole
+                                           ] ;
+                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty [ owl:inverseOf untitled-ontology-28:hasContribution
+                                           ] ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass untitled-ontology-28:CampaignFinance
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty [ owl:inverseOf untitled-ontology-28:hasContribution
+                                           ] ;
+                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty [ owl:inverseOf untitled-ontology-28:isAffiliatedWith
+                                           ] ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass untitled-ontology-28:Committee
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty [ owl:inverseOf untitled-ontology-28:isAffiliatedWith
+                                           ] ;
+                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty [ owl:inverseOf untitled-ontology-28:performedBy
+                                           ] ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass untitled-ontology-28:CandidateRole
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty [ owl:inverseOf untitled-ontology-28:performedBy
+                                           ] ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass untitled-ontology-28:CommitteeRole
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty [ owl:inverseOf untitled-ontology-28:performedBy
+                                           ] ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass untitled-ontology-28:ContributorRole
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty [ owl:inverseOf untitled-ontology-28:performedBy
+                                           ] ;
+                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty [ owl:inverseOf untitled-ontology-28:provideCandidateRole
+                                           ] ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass untitled-ontology-28:CampaignFinance
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty [ owl:inverseOf untitled-ontology-28:provideCandidateRole
+                                           ] ;
+                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty [ owl:inverseOf untitled-ontology-28:provideCommitteeRole
+                                           ] ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass untitled-ontology-28:CampaignFinance
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty [ owl:inverseOf untitled-ontology-28:provideCommitteeRole
+                                           ] ;
+                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty [ owl:inverseOf untitled-ontology-28:subEventOf
+                                           ] ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass untitled-ontology-28:CampaignFinance
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty [ owl:inverseOf untitled-ontology-28:subEventOf
+                                           ] ;
+                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:atPlace ;
+                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:atTime ;
+                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:hasAddress ;
+                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:hasCandidateID ;
+                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:hasCity ;
+                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:hasCommitteeID ;
+                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:hasContributionDate ;
+                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:hasElectionType ;
+                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:hasEmployer ;
+                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:hasFileNumber ;
+                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:hasFormType ;
+                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:hasName ;
+                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:hasOccupation ;
+                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:hasReceiptAmount ;
+                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:hasState ;
+                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:hasTransactionID ;
+                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty untitled-ontology-28:hasZipCode ;
+                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          ] .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:ProvideContributorRole ;
+  owl:someValuesFrom untitled-ontology-28:ContributorRole ;
+  rdfs:subClassOf untitled-ontology-28:Contribution
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:ProvideContributorRole ;
+  owl:someValuesFrom owl:Thing ;
+  rdfs:subClassOf untitled-ontology-28:Contribution
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasContribution ;
+  owl:someValuesFrom untitled-ontology-28:Contribution ;
+  rdfs:subClassOf untitled-ontology-28:CampaignFinance
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasContribution ;
+  owl:someValuesFrom owl:Thing ;
+  rdfs:subClassOf untitled-ontology-28:CampaignFinance
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:isAffiliatedWith ;
+  owl:someValuesFrom untitled-ontology-28:Candidate ;
+  rdfs:subClassOf untitled-ontology-28:Committee
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:isAffiliatedWith ;
+  owl:someValuesFrom owl:Thing ;
+  rdfs:subClassOf untitled-ontology-28:Committee
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:performedBy ;
+  owl:someValuesFrom untitled-ontology-28:Candidate ;
+  rdfs:subClassOf untitled-ontology-28:CandidateRole
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:performedBy ;
+  owl:someValuesFrom untitled-ontology-28:Committee ;
+  rdfs:subClassOf untitled-ontology-28:CommitteeRole
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:performedBy ;
+  owl:someValuesFrom untitled-ontology-28:Contributor ;
+  rdfs:subClassOf untitled-ontology-28:ContributorRole
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:performedBy ;
+  owl:someValuesFrom owl:Thing ;
+  rdfs:subClassOf untitled-ontology-28:CandidateRole
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:performedBy ;
+  owl:someValuesFrom owl:Thing ;
+  rdfs:subClassOf untitled-ontology-28:CommitteeRole
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:performedBy ;
+  owl:someValuesFrom owl:Thing ;
+  rdfs:subClassOf untitled-ontology-28:ContributorRole
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:provideCandidateRole ;
+  owl:someValuesFrom untitled-ontology-28:CandidateRole ;
+  rdfs:subClassOf untitled-ontology-28:CampaignFinance
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:provideCandidateRole ;
+  owl:someValuesFrom owl:Thing ;
+  rdfs:subClassOf untitled-ontology-28:CampaignFinance
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:provideCommitteeRole ;
+  owl:someValuesFrom untitled-ontology-28:CommitteeRole ;
+  rdfs:subClassOf untitled-ontology-28:CampaignFinance
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:provideCommitteeRole ;
+  owl:someValuesFrom owl:Thing ;
+  rdfs:subClassOf untitled-ontology-28:CampaignFinance
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:subEventOf ;
+  owl:someValuesFrom untitled-ontology-28:PresidentialElection ;
+  rdfs:subClassOf untitled-ontology-28:CampaignFinance
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:subEventOf ;
+  owl:someValuesFrom owl:Thing ;
+  rdfs:subClassOf untitled-ontology-28:CampaignFinance
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:atPlace ;
+  owl:someValuesFrom rdfs:Literal ;
+  rdfs:subClassOf untitled-ontology-28:Election
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:atTime ;
+  owl:someValuesFrom rdfs:Literal ;
+  rdfs:subClassOf untitled-ontology-28:Election
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasAddress ;
+  owl:someValuesFrom rdfs:Literal ;
+  rdfs:subClassOf untitled-ontology-28:Committee
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasCandidateID ;
+  owl:someValuesFrom rdfs:Literal ;
+  rdfs:subClassOf untitled-ontology-28:Candidate
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasCity ;
+  owl:someValuesFrom rdfs:Literal ;
+  rdfs:subClassOf untitled-ontology-28:Committee
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasCity ;
+  owl:someValuesFrom rdfs:Literal ;
+  rdfs:subClassOf untitled-ontology-28:Contributor
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasCommitteeID ;
+  owl:someValuesFrom rdfs:Literal ;
+  rdfs:subClassOf untitled-ontology-28:Committee
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasContributionDate ;
+  owl:someValuesFrom rdfs:Literal ;
+  rdfs:subClassOf untitled-ontology-28:Contribution
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasEmployer ;
+  owl:someValuesFrom rdfs:Literal ;
+  rdfs:subClassOf untitled-ontology-28:Contributor
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasFileNumber ;
+  owl:someValuesFrom rdfs:Literal ;
+  rdfs:subClassOf untitled-ontology-28:Contribution
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasFormType ;
+  owl:someValuesFrom rdfs:Literal ;
+  rdfs:subClassOf untitled-ontology-28:Contribution
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasName ;
+  owl:someValuesFrom rdfs:Literal ;
+  rdfs:subClassOf untitled-ontology-28:Candidate
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasName ;
+  owl:someValuesFrom rdfs:Literal ;
+  rdfs:subClassOf untitled-ontology-28:Committee
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasName ;
+  owl:someValuesFrom rdfs:Literal ;
+  rdfs:subClassOf untitled-ontology-28:Contributor
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasOccupation ;
+  owl:someValuesFrom rdfs:Literal ;
+  rdfs:subClassOf untitled-ontology-28:Contributor
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasReceiptAmount ;
+  owl:someValuesFrom rdfs:Literal ;
+  rdfs:subClassOf untitled-ontology-28:Contribution
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasState ;
+  owl:someValuesFrom rdfs:Literal ;
+  rdfs:subClassOf untitled-ontology-28:Committee
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasState ;
+  owl:someValuesFrom rdfs:Literal ;
+  rdfs:subClassOf untitled-ontology-28:Contributor
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasZipCode ;
+  owl:someValuesFrom rdfs:Literal ;
+  rdfs:subClassOf untitled-ontology-28:Committee
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasZipCode ;
+  owl:someValuesFrom rdfs:Literal ;
+  rdfs:subClassOf untitled-ontology-28:Contributor
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:atPlace ;
+  owl:hasValue "Place"^^xsd:string ;
+  rdfs:subClassOf untitled-ontology-28:Election
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:atTime ;
+  owl:hasValue "TemporlExtent"^^xsd:dateTime ;
+  rdfs:subClassOf untitled-ontology-28:Election
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasAddress ;
+  owl:hasValue "Address"^^xsd:string ;
+  rdfs:subClassOf untitled-ontology-28:Committee
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasCandidateID ;
+  owl:hasValue "CandidateID"^^xsd:string ;
+  rdfs:subClassOf untitled-ontology-28:Candidate
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasCity ;
+  owl:hasValue "City"^^xsd:string ;
+  rdfs:subClassOf untitled-ontology-28:Committee
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasCity ;
+  owl:hasValue "City"^^xsd:string ;
+  rdfs:subClassOf untitled-ontology-28:Contributor
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasCommitteeID ;
+  owl:hasValue "CommitteeID"^^xsd:string ;
+  rdfs:subClassOf untitled-ontology-28:Committee
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasContributionDate ;
+  owl:hasValue "ContributionDate"^^xsd:dateTime ;
+  rdfs:subClassOf untitled-ontology-28:Contribution
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasEmployer ;
+  owl:hasValue "Employer"^^xsd:string ;
+  rdfs:subClassOf untitled-ontology-28:Contributor
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasFileNumber ;
+  owl:hasValue FileNumber ;
+  rdfs:subClassOf untitled-ontology-28:Contribution
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasFormType ;
+  owl:hasValue "FormType"^^xsd:string ;
+  rdfs:subClassOf untitled-ontology-28:Contribution
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasName ;
+  owl:hasValue "Name"^^xsd:string ;
+  rdfs:subClassOf untitled-ontology-28:Candidate
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasName ;
+  owl:hasValue "Name"^^xsd:string ;
+  rdfs:subClassOf untitled-ontology-28:Committee
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasName ;
+  owl:hasValue "Name"^^xsd:string ;
+  rdfs:subClassOf untitled-ontology-28:Contributor
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasOccupation ;
+  owl:hasValue "Occupation"^^xsd:string ;
+  rdfs:subClassOf untitled-ontology-28:Contributor
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasReceiptAmount ;
+  owl:hasValue "ReceiptAmount"^^xsd:double ;
+  rdfs:subClassOf untitled-ontology-28:Contribution
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasState ;
+  owl:hasValue "State"^^xsd:string ;
+  rdfs:subClassOf untitled-ontology-28:Committee
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasState ;
+  owl:hasValue "State"^^xsd:string ;
+  rdfs:subClassOf untitled-ontology-28:Contributor
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasTransactionID ;
+  owl:hasValue "TransactionID"^^xsd:string ;
+  rdfs:subClassOf untitled-ontology-28:Contribution
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasZipCode ;
+  owl:hasValue ZIPCode ;
+  rdfs:subClassOf untitled-ontology-28:Committee
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty untitled-ontology-28:hasZipCode ;
+  owl:hasValue ZIPCode ;
+  rdfs:subClassOf untitled-ontology-28:Contributor
+] .
+
+
+###  Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi

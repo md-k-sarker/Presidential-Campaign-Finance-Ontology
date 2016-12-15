@@ -1,0 +1,58 @@
+@prefix : <https://w3id.org/PCF/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix pcf: <https://w3id.org/rdfPCF/pcfonto#> .
+
+:elc987ou20 rdf:type pcf:Election ;
+            pcf:atPlace "USA"^^xsd:string ;
+            pcf:atTime "2016-01-01T00:00:00"^^xsd:dataTime .
+
+:pde408in29 rdf:type pcf:PresidentialElection ;
+            rdfs:subClassOf :ec987ou20 .
+
+:cpf099fn49 rdf:type pcf:CampaignFinance ;
+		    pcf:subEventOf :pde408in29 ;
+ 		    pcf:provideCandidateRole :cnd943uf09 ;
+ 		    pcf:provideCommitteeRole :cmr973ni41 ;
+  		    pcf:hasContribution :ctb987iy08 .
+
+:cmr973ni41 rdf:type pcf:CommitteeRole ;
+			pcf:performedBy :cmt029jd09 .
+
+:cmt029jd09 rdf:type pcf:Committee ;
+            pcf:hasCommitteeID "C00580100"^^xsd:string ;
+            pcf:hasName "DONALD J. TRUMP FOR PRESIDENT, INC."^^xsd:string ;
+            pcf:hasAddress "725 FIFTH AVENUE"^^xsd:string ;
+            pcf:hasCity "NEW YORK"^^xsd:string ;
+            pcf:hasState "NY"^^xsd:string ;
+            pcf:hasZIPCode "10022"^^xsd:integer ;
+            pcf:isAffiliatedWith :cnd943uf09 .
+
+:cdr286ug29	rdf:type pcf:CandidateRole ;
+			pcf:performedBy :cnd943uf09 .
+
+:cnd943uf09 rdf:type pcf:Candidate ;
+			pcf:hasCandidateID "P80001571"^^xsd:string ;  
+			pcf:hasName "Trump, Donald J."^^xsd:string . 
+
+:ctb987iy08 rdf:type pcf:Contribution ;
+			pcf:hasReceiptAmount "150"^^xsd:double ;
+			pcf:hasContributionDate "2016-09-01T00:00:00"^^xsd:dateTime ;
+			pcf:hasTransactionID "SA17A.2480790"^^xsd:string ;
+			pcf:hasFormType "SA17A"^^xsd:string ;
+			pcf:hasFileNumber "1111849"^^xsd:integer ;
+			pcf:hasElectionType "G2016"^^xsd:string ;
+			pcf:provideContributorRole :ctr976jb12 .
+
+:ctr976jb12 rdf:type pcf:ContributorRole ;
+			pcf:performedBy :ctt979du27 .
+
+:ctt979du27 rdf:type pcf:Contributor ;
+			pcf:hasOccupation "SMALL BUISNESS OWNER"^^xsd:string ;
+			pcf:hasContributorID ""xsd:string ;
+			pcf:hasName "ROADFELDT, STEPHEN"^^xsd:string ;
+			pcf:hasCity "BEAVERCREEK"^^xsd:string ;
+			pcf:hasState "OH"^^xsd:string ;
+			pcf:hasZIPCode "45431"^^xsd:integer ;
+			pcf:hasEmployer "SHEPRA, INC."^^xsd:string .
+

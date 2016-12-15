@@ -29,7 +29,7 @@ Contributor, Candidate, Contribution, Committee, Election, Presidential Election
 
 ##Diagram
 
-<img src="https://github.com/md-k-sarker/Presidential-Campaign-Finance-Ontology/raw/master/CS7810Ver3.jpg"></img>
+<img src="https://github.com/md-k-sarker/Presidential-Campaign-Finance-Ontology/raw/master/Figures/fullModel.jpg"></img>
 
 
 

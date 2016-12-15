@@ -1,0 +1,1690 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28">
+    <Prefix name="" IRI="http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="untitled-ontology-28" IRI="http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#"/>
+    <Declaration>
+        <Class IRI="#Candidate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasZipCode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasContribution"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasContributionDate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Contributor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CampaignFinance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAffiliatedWith"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEmployer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CommitteeRole"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#performedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Contribution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Election"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#atTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ProvideContributorRole"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasElectionType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCommitteeID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasOccupation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#provideCandidateRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#subEventOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#provideCommitteeRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContributorRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CandidateRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Committee"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasFileNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasState"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#atPlace"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTransactionID"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#provides"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasReceiptAmount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasFormType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PresidentialElection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AgentRole"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAddress"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCandidateID"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Agent"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#provides"/>
+            <Class IRI="#AgentRole"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CampaignFinance"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasContribution"/>
+            <Class IRI="#Contribution"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CampaignFinance"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#provideCandidateRole"/>
+            <Class IRI="#CandidateRole"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CampaignFinance"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#provideCommitteeRole"/>
+            <Class IRI="#CommitteeRole"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CampaignFinance"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#subEventOf"/>
+            <Class IRI="#PresidentialElection"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CampaignFinance"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#subEventOf"/>
+            <Class IRI="#PresidentialElection"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Candidate"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Candidate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#isAffiliatedWith"/>
+            </ObjectInverseOf>
+            <Class IRI="#Committee"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Candidate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#performedBy"/>
+            </ObjectInverseOf>
+            <Class IRI="#CandidateRole"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Candidate"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#isAffiliatedWith"/>
+            </ObjectInverseOf>
+            <Class IRI="#Committee"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Candidate"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#isAffiliatedWith"/>
+            </ObjectInverseOf>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Candidate"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#performedBy"/>
+            </ObjectInverseOf>
+            <Class IRI="#CandidateRole"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Candidate"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#performedBy"/>
+            </ObjectInverseOf>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Candidate"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasCandidateID"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Candidate"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasName"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CandidateRole"/>
+        <Class IRI="#AgentRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CandidateRole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#provideCandidateRole"/>
+            </ObjectInverseOf>
+            <Class IRI="#CampaignFinance"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CandidateRole"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#performedBy"/>
+            <Class IRI="#Candidate"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CandidateRole"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#performedBy"/>
+            <Class IRI="#Candidate"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CandidateRole"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#performedBy"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CandidateRole"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#provideCandidateRole"/>
+            </ObjectInverseOf>
+            <Class IRI="#CampaignFinance"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CandidateRole"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#provideCandidateRole"/>
+            </ObjectInverseOf>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Committee"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Committee"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isAffiliatedWith"/>
+            <Class IRI="#Candidate"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Committee"/>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#performedBy"/>
+            </ObjectInverseOf>
+            <Class IRI="#CommitteeRole"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Committee"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAffiliatedWith"/>
+            <Class IRI="#Candidate"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Committee"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#isAffiliatedWith"/>
+            <Class IRI="#Candidate"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Committee"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#isAffiliatedWith"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Committee"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#performedBy"/>
+            </ObjectInverseOf>
+            <Class IRI="#CommitteeRole"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Committee"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#performedBy"/>
+            </ObjectInverseOf>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Committee"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasAddress"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Committee"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasCity"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Committee"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasCommitteeID"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Committee"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasName"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Committee"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasState"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Committee"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasZipCode"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommitteeRole"/>
+        <Class IRI="#AgentRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommitteeRole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#performedBy"/>
+            <Class IRI="#Committee"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommitteeRole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#provideCommitteeRole"/>
+            </ObjectInverseOf>
+            <Class IRI="#CampaignFinance"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommitteeRole"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#performedBy"/>
+            <Class IRI="#Committee"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommitteeRole"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#performedBy"/>
+            <Class IRI="#Committee"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommitteeRole"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#performedBy"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommitteeRole"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#provideCommitteeRole"/>
+            </ObjectInverseOf>
+            <Class IRI="#CampaignFinance"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommitteeRole"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#provideCommitteeRole"/>
+            </ObjectInverseOf>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contribution"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#ProvideContributorRole"/>
+            <Class IRI="#ContributorRole"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contribution"/>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#hasContribution"/>
+            </ObjectInverseOf>
+            <Class IRI="#CampaignFinance"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contribution"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#ProvideContributorRole"/>
+            <Class IRI="#ContributorRole"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contribution"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#ProvideContributorRole"/>
+            <Class IRI="#ContributorRole"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contribution"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#ProvideContributorRole"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contribution"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#hasContribution"/>
+            </ObjectInverseOf>
+            <Class IRI="#CampaignFinance"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contribution"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#hasContribution"/>
+            </ObjectInverseOf>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contribution"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasContributionDate"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contribution"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasFileNumber"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contribution"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasFormType"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contribution"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasReceiptAmount"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contribution"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasTransactionID"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contributor"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contributor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#performedBy"/>
+            </ObjectInverseOf>
+            <Class IRI="#ContributorRole"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contributor"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#performedBy"/>
+            </ObjectInverseOf>
+            <Class IRI="#ContributorRole"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contributor"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#performedBy"/>
+            </ObjectInverseOf>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contributor"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasCity"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contributor"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasEmployer"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contributor"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasName"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contributor"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasOccupation"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contributor"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasState"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contributor"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasZipCode"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContributorRole"/>
+        <Class IRI="#AgentRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContributorRole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#performedBy"/>
+            <Class IRI="#Contributor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContributorRole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#ProvideContributorRole"/>
+            </ObjectInverseOf>
+            <Class IRI="#Contribution"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContributorRole"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#performedBy"/>
+            <Class IRI="#Contributor"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContributorRole"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#performedBy"/>
+            <Class IRI="#Contributor"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContributorRole"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#performedBy"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContributorRole"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#ProvideContributorRole"/>
+            </ObjectInverseOf>
+            <Class IRI="#Contribution"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContributorRole"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#ProvideContributorRole"/>
+            </ObjectInverseOf>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Election"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#atPlace"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Election"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#atTime"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PresidentialElection"/>
+        <Class IRI="#Election"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PresidentialElection"/>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#subEventOf"/>
+            </ObjectInverseOf>
+            <Class IRI="#CampaignFinance"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PresidentialElection"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#subEventOf"/>
+            </ObjectInverseOf>
+            <Class IRI="#CampaignFinance"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PresidentialElection"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#subEventOf"/>
+            </ObjectInverseOf>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#ProvideContributorRole"/>
+            <Class IRI="#ContributorRole"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasContribution"/>
+            <Class IRI="#Contribution"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAffiliatedWith"/>
+            <Class IRI="#Candidate"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#performedBy"/>
+            <Class IRI="#Candidate"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#performedBy"/>
+            <Class IRI="#Committee"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#performedBy"/>
+            <Class IRI="#Contributor"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#provideCandidateRole"/>
+            <Class IRI="#CandidateRole"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#provideCommitteeRole"/>
+            <Class IRI="#CommitteeRole"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#subEventOf"/>
+            <Class IRI="#PresidentialElection"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#ProvideContributorRole"/>
+            <Class IRI="#ContributorRole"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#ProvideContributorRole"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#hasContribution"/>
+            <Class IRI="#Contribution"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#hasContribution"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#isAffiliatedWith"/>
+            <Class IRI="#Candidate"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#isAffiliatedWith"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#performedBy"/>
+            <Class IRI="#Candidate"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#performedBy"/>
+            <Class IRI="#Committee"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#performedBy"/>
+            <Class IRI="#Contributor"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#performedBy"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#provideCandidateRole"/>
+            <Class IRI="#CandidateRole"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#provideCandidateRole"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#provideCommitteeRole"/>
+            <Class IRI="#CommitteeRole"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#provideCommitteeRole"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#subEventOf"/>
+            <Class IRI="#PresidentialElection"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#subEventOf"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#ProvideContributorRole"/>
+            </ObjectInverseOf>
+            <Class IRI="#Contribution"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#ProvideContributorRole"/>
+            </ObjectInverseOf>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#hasContribution"/>
+            </ObjectInverseOf>
+            <Class IRI="#CampaignFinance"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#hasContribution"/>
+            </ObjectInverseOf>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#isAffiliatedWith"/>
+            </ObjectInverseOf>
+            <Class IRI="#Committee"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#isAffiliatedWith"/>
+            </ObjectInverseOf>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#performedBy"/>
+            </ObjectInverseOf>
+            <Class IRI="#CandidateRole"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#performedBy"/>
+            </ObjectInverseOf>
+            <Class IRI="#CommitteeRole"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#performedBy"/>
+            </ObjectInverseOf>
+            <Class IRI="#ContributorRole"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#performedBy"/>
+            </ObjectInverseOf>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#provideCandidateRole"/>
+            </ObjectInverseOf>
+            <Class IRI="#CampaignFinance"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#provideCandidateRole"/>
+            </ObjectInverseOf>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#provideCommitteeRole"/>
+            </ObjectInverseOf>
+            <Class IRI="#CampaignFinance"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#provideCommitteeRole"/>
+            </ObjectInverseOf>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#subEventOf"/>
+            </ObjectInverseOf>
+            <Class IRI="#CampaignFinance"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#subEventOf"/>
+            </ObjectInverseOf>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#atPlace"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#atTime"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasAddress"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasCandidateID"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasCity"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasCommitteeID"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasContributionDate"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasElectionType"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasEmployer"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasFileNumber"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasFormType"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasName"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasOccupation"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasReceiptAmount"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasState"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasTransactionID"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasZipCode"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#ProvideContributorRole"/>
+            <Class IRI="#ContributorRole"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#Contribution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#ProvideContributorRole"/>
+            <Class abbreviatedIRI="owl:Thing"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#Contribution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasContribution"/>
+            <Class IRI="#Contribution"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#CampaignFinance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasContribution"/>
+            <Class abbreviatedIRI="owl:Thing"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#CampaignFinance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isAffiliatedWith"/>
+            <Class IRI="#Candidate"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#Committee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isAffiliatedWith"/>
+            <Class abbreviatedIRI="owl:Thing"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#Committee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#performedBy"/>
+            <Class IRI="#Candidate"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#CandidateRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#performedBy"/>
+            <Class IRI="#Committee"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#CommitteeRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#performedBy"/>
+            <Class IRI="#Contributor"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#ContributorRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#performedBy"/>
+            <Class abbreviatedIRI="owl:Thing"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#CandidateRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#performedBy"/>
+            <Class abbreviatedIRI="owl:Thing"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#CommitteeRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#performedBy"/>
+            <Class abbreviatedIRI="owl:Thing"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#ContributorRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#provideCandidateRole"/>
+            <Class IRI="#CandidateRole"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#CampaignFinance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#provideCandidateRole"/>
+            <Class abbreviatedIRI="owl:Thing"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#CampaignFinance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#provideCommitteeRole"/>
+            <Class IRI="#CommitteeRole"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#CampaignFinance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#provideCommitteeRole"/>
+            <Class abbreviatedIRI="owl:Thing"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#CampaignFinance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#subEventOf"/>
+            <Class IRI="#PresidentialElection"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#CampaignFinance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#subEventOf"/>
+            <Class abbreviatedIRI="owl:Thing"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#CampaignFinance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#atPlace"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+        <Class IRI="#Election"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#atTime"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+        <Class IRI="#Election"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasAddress"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+        <Class IRI="#Committee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasCandidateID"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+        <Class IRI="#Candidate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasCity"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+        <Class IRI="#Committee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasCity"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+        <Class IRI="#Contributor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasCommitteeID"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+        <Class IRI="#Committee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasContributionDate"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+        <Class IRI="#Contribution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasEmployer"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+        <Class IRI="#Contributor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasFileNumber"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+        <Class IRI="#Contribution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasFormType"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+        <Class IRI="#Contribution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasName"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+        <Class IRI="#Candidate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasName"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+        <Class IRI="#Committee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasName"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+        <Class IRI="#Contributor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasOccupation"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+        <Class IRI="#Contributor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasReceiptAmount"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+        <Class IRI="#Contribution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasState"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+        <Class IRI="#Committee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasState"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+        <Class IRI="#Contributor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasZipCode"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+        <Class IRI="#Committee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasZipCode"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+        <Class IRI="#Contributor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataHasValue>
+            <DataProperty IRI="#atPlace"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Place</Literal>
+        </DataHasValue>
+        <Class IRI="#Election"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataHasValue>
+            <DataProperty IRI="#atTime"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">TemporlExtent</Literal>
+        </DataHasValue>
+        <Class IRI="#Election"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataHasValue>
+            <DataProperty IRI="#hasAddress"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Address</Literal>
+        </DataHasValue>
+        <Class IRI="#Committee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataHasValue>
+            <DataProperty IRI="#hasCandidateID"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CandidateID</Literal>
+        </DataHasValue>
+        <Class IRI="#Candidate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataHasValue>
+            <DataProperty IRI="#hasCity"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">City</Literal>
+        </DataHasValue>
+        <Class IRI="#Committee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataHasValue>
+            <DataProperty IRI="#hasCity"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">City</Literal>
+        </DataHasValue>
+        <Class IRI="#Contributor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataHasValue>
+            <DataProperty IRI="#hasCommitteeID"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CommitteeID</Literal>
+        </DataHasValue>
+        <Class IRI="#Committee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataHasValue>
+            <DataProperty IRI="#hasContributionDate"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">ContributionDate</Literal>
+        </DataHasValue>
+        <Class IRI="#Contribution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataHasValue>
+            <DataProperty IRI="#hasEmployer"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Employer</Literal>
+        </DataHasValue>
+        <Class IRI="#Contributor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataHasValue>
+            <DataProperty IRI="#hasFileNumber"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">FileNumber</Literal>
+        </DataHasValue>
+        <Class IRI="#Contribution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataHasValue>
+            <DataProperty IRI="#hasFormType"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FormType</Literal>
+        </DataHasValue>
+        <Class IRI="#Contribution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataHasValue>
+            <DataProperty IRI="#hasName"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Name</Literal>
+        </DataHasValue>
+        <Class IRI="#Candidate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataHasValue>
+            <DataProperty IRI="#hasName"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Name</Literal>
+        </DataHasValue>
+        <Class IRI="#Committee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataHasValue>
+            <DataProperty IRI="#hasName"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Name</Literal>
+        </DataHasValue>
+        <Class IRI="#Contributor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataHasValue>
+            <DataProperty IRI="#hasOccupation"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Occupation</Literal>
+        </DataHasValue>
+        <Class IRI="#Contributor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataHasValue>
+            <DataProperty IRI="#hasReceiptAmount"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">ReceiptAmount</Literal>
+        </DataHasValue>
+        <Class IRI="#Contribution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataHasValue>
+            <DataProperty IRI="#hasState"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">State</Literal>
+        </DataHasValue>
+        <Class IRI="#Committee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataHasValue>
+            <DataProperty IRI="#hasState"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">State</Literal>
+        </DataHasValue>
+        <Class IRI="#Contributor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataHasValue>
+            <DataProperty IRI="#hasTransactionID"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">TransactionID</Literal>
+        </DataHasValue>
+        <Class IRI="#Contribution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataHasValue>
+            <DataProperty IRI="#hasZipCode"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">ZIPCode</Literal>
+        </DataHasValue>
+        <Class IRI="#Committee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataHasValue>
+            <DataProperty IRI="#hasZipCode"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">ZIPCode</Literal>
+        </DataHasValue>
+        <Class IRI="#Contributor"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#CampaignFinance"/>
+        <Class IRI="#Candidate"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CampaignFinance"/>
+        <Class IRI="#CandidateRole"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CampaignFinance"/>
+        <Class IRI="#Committee"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CampaignFinance"/>
+        <Class IRI="#CommitteeRole"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CampaignFinance"/>
+        <Class IRI="#Contribution"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CampaignFinance"/>
+        <Class IRI="#Contributor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CampaignFinance"/>
+        <Class IRI="#ContributorRole"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CampaignFinance"/>
+        <Class IRI="#Election"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CampaignFinance"/>
+        <Class IRI="#PresidentialElection"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Candidate"/>
+        <Class IRI="#CandidateRole"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Candidate"/>
+        <Class IRI="#Committee"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Candidate"/>
+        <Class IRI="#CommitteeRole"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Candidate"/>
+        <Class IRI="#Contribution"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Candidate"/>
+        <Class IRI="#Contributor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Candidate"/>
+        <Class IRI="#ContributorRole"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Candidate"/>
+        <Class IRI="#Election"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Candidate"/>
+        <Class IRI="#PresidentialElection"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CandidateRole"/>
+        <Class IRI="#Committee"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CandidateRole"/>
+        <Class IRI="#CommitteeRole"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CandidateRole"/>
+        <Class IRI="#Contribution"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CandidateRole"/>
+        <Class IRI="#Contributor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CandidateRole"/>
+        <Class IRI="#ContributorRole"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CandidateRole"/>
+        <Class IRI="#Election"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CandidateRole"/>
+        <Class IRI="#PresidentialElection"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Committee"/>
+        <Class IRI="#CommitteeRole"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Committee"/>
+        <Class IRI="#Contribution"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Committee"/>
+        <Class IRI="#Contributor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Committee"/>
+        <Class IRI="#ContributorRole"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Committee"/>
+        <Class IRI="#Election"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Committee"/>
+        <Class IRI="#PresidentialElection"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CommitteeRole"/>
+        <Class IRI="#Contribution"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CommitteeRole"/>
+        <Class IRI="#Contributor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CommitteeRole"/>
+        <Class IRI="#ContributorRole"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CommitteeRole"/>
+        <Class IRI="#Election"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CommitteeRole"/>
+        <Class IRI="#PresidentialElection"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Contribution"/>
+        <Class IRI="#Contributor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Contribution"/>
+        <Class IRI="#ContributorRole"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Contribution"/>
+        <Class IRI="#Election"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Contribution"/>
+        <Class IRI="#PresidentialElection"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Contributor"/>
+        <Class IRI="#ContributorRole"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Contributor"/>
+        <Class IRI="#Election"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Contributor"/>
+        <Class IRI="#PresidentialElection"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ContributorRole"/>
+        <Class IRI="#Election"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ContributorRole"/>
+        <Class IRI="#PresidentialElection"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#provides"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

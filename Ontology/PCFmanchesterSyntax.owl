@@ -1,0 +1,340 @@
+Prefix: : <http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: untitled-ontology-28: <http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+Ontology: <http://www.semanticweb.org/luzhou/ontologies/2016/11/untitled-ontology-28>
+
+
+Datatype: rdfs:Literal
+
+    
+Datatype: xsd:dateTime
+
+    
+Datatype: xsd:double
+
+    
+Datatype: xsd:integer
+
+    
+Datatype: xsd:string
+
+    
+ObjectProperty: owl:topObjectProperty
+
+    
+ObjectProperty: untitled-ontology-28:ProvideContributorRole
+
+    
+ObjectProperty: untitled-ontology-28:hasContribution
+
+    
+ObjectProperty: untitled-ontology-28:isAffiliatedWith
+
+    
+ObjectProperty: untitled-ontology-28:performedBy
+
+    
+ObjectProperty: untitled-ontology-28:provideCandidateRole
+
+    
+ObjectProperty: untitled-ontology-28:provideCommitteeRole
+
+    
+ObjectProperty: untitled-ontology-28:provides
+
+    SubPropertyOf: 
+        owl:topObjectProperty
+    
+    
+ObjectProperty: untitled-ontology-28:subEventOf
+
+    
+DataProperty: untitled-ontology-28:atPlace
+
+    
+DataProperty: untitled-ontology-28:atTime
+
+    
+DataProperty: untitled-ontology-28:hasAddress
+
+    
+DataProperty: untitled-ontology-28:hasCandidateID
+
+    
+DataProperty: untitled-ontology-28:hasCity
+
+    
+DataProperty: untitled-ontology-28:hasCommitteeID
+
+    
+DataProperty: untitled-ontology-28:hasContributionDate
+
+    
+DataProperty: untitled-ontology-28:hasElectionType
+
+    
+DataProperty: untitled-ontology-28:hasEmployer
+
+    
+DataProperty: untitled-ontology-28:hasFileNumber
+
+    
+DataProperty: untitled-ontology-28:hasFormType
+
+    
+DataProperty: untitled-ontology-28:hasName
+
+    
+DataProperty: untitled-ontology-28:hasOccupation
+
+    
+DataProperty: untitled-ontology-28:hasReceiptAmount
+
+    
+DataProperty: untitled-ontology-28:hasState
+
+    
+DataProperty: untitled-ontology-28:hasTransactionID
+
+    
+DataProperty: untitled-ontology-28:hasZipCode
+
+    
+Class: owl:Thing
+
+    SubClassOf: 
+        untitled-ontology-28:ProvideContributorRole only untitled-ontology-28:ContributorRole,
+        untitled-ontology-28:hasContribution only untitled-ontology-28:Contribution,
+        untitled-ontology-28:isAffiliatedWith only untitled-ontology-28:Candidate,
+        untitled-ontology-28:performedBy only untitled-ontology-28:Candidate,
+        untitled-ontology-28:performedBy only untitled-ontology-28:Committee,
+        untitled-ontology-28:performedBy only untitled-ontology-28:Contributor,
+        untitled-ontology-28:provideCandidateRole only untitled-ontology-28:CandidateRole,
+        untitled-ontology-28:provideCommitteeRole only untitled-ontology-28:CommitteeRole,
+        untitled-ontology-28:subEventOf only untitled-ontology-28:PresidentialElection,
+        untitled-ontology-28:ProvideContributorRole max 1 untitled-ontology-28:ContributorRole,
+        untitled-ontology-28:ProvideContributorRole max 1 owl:Thing,
+        untitled-ontology-28:hasContribution max 1 untitled-ontology-28:Contribution,
+        untitled-ontology-28:hasContribution max 1 owl:Thing,
+        untitled-ontology-28:isAffiliatedWith max 1 untitled-ontology-28:Candidate,
+        untitled-ontology-28:isAffiliatedWith max 1 owl:Thing,
+        untitled-ontology-28:performedBy max 1 untitled-ontology-28:Candidate,
+        untitled-ontology-28:performedBy max 1 untitled-ontology-28:Committee,
+        untitled-ontology-28:performedBy max 1 untitled-ontology-28:Contributor,
+        untitled-ontology-28:performedBy max 1 owl:Thing,
+        untitled-ontology-28:provideCandidateRole max 1 untitled-ontology-28:CandidateRole,
+        untitled-ontology-28:provideCandidateRole max 1 owl:Thing,
+        untitled-ontology-28:provideCommitteeRole max 1 untitled-ontology-28:CommitteeRole,
+        untitled-ontology-28:provideCommitteeRole max 1 owl:Thing,
+        untitled-ontology-28:subEventOf max 1 untitled-ontology-28:PresidentialElection,
+        untitled-ontology-28:subEventOf max 1 owl:Thing,
+         inverse (untitled-ontology-28:ProvideContributorRole) max 1 untitled-ontology-28:Contribution,
+         inverse (untitled-ontology-28:ProvideContributorRole) max 1 owl:Thing,
+         inverse (untitled-ontology-28:hasContribution) max 1 untitled-ontology-28:CampaignFinance,
+         inverse (untitled-ontology-28:hasContribution) max 1 owl:Thing,
+         inverse (untitled-ontology-28:isAffiliatedWith) max 1 untitled-ontology-28:Committee,
+         inverse (untitled-ontology-28:isAffiliatedWith) max 1 owl:Thing,
+         inverse (untitled-ontology-28:performedBy) max 1 untitled-ontology-28:CandidateRole,
+         inverse (untitled-ontology-28:performedBy) max 1 untitled-ontology-28:CommitteeRole,
+         inverse (untitled-ontology-28:performedBy) max 1 untitled-ontology-28:ContributorRole,
+         inverse (untitled-ontology-28:performedBy) max 1 owl:Thing,
+         inverse (untitled-ontology-28:provideCandidateRole) max 1 untitled-ontology-28:CampaignFinance,
+         inverse (untitled-ontology-28:provideCandidateRole) max 1 owl:Thing,
+         inverse (untitled-ontology-28:provideCommitteeRole) max 1 untitled-ontology-28:CampaignFinance,
+         inverse (untitled-ontology-28:provideCommitteeRole) max 1 owl:Thing,
+         inverse (untitled-ontology-28:subEventOf) max 1 untitled-ontology-28:CampaignFinance,
+         inverse (untitled-ontology-28:subEventOf) max 1 owl:Thing,
+        untitled-ontology-28:atPlace max 1 rdfs:Literal,
+        untitled-ontology-28:atTime max 1 rdfs:Literal,
+        untitled-ontology-28:hasAddress max 1 rdfs:Literal,
+        untitled-ontology-28:hasCandidateID max 1 rdfs:Literal,
+        untitled-ontology-28:hasCity max 1 rdfs:Literal,
+        untitled-ontology-28:hasCommitteeID max 1 rdfs:Literal,
+        untitled-ontology-28:hasContributionDate max 1 rdfs:Literal,
+        untitled-ontology-28:hasElectionType max 1 rdfs:Literal,
+        untitled-ontology-28:hasEmployer max 1 rdfs:Literal,
+        untitled-ontology-28:hasFileNumber max 1 rdfs:Literal,
+        untitled-ontology-28:hasFormType max 1 rdfs:Literal,
+        untitled-ontology-28:hasName max 1 rdfs:Literal,
+        untitled-ontology-28:hasOccupation max 1 rdfs:Literal,
+        untitled-ontology-28:hasReceiptAmount max 1 rdfs:Literal,
+        untitled-ontology-28:hasState max 1 rdfs:Literal,
+        untitled-ontology-28:hasTransactionID max 1 rdfs:Literal,
+        untitled-ontology-28:hasZipCode max 1 rdfs:Literal
+    
+    
+Class: untitled-ontology-28:Agent
+
+    SubClassOf: 
+        untitled-ontology-28:provides exactly 1 untitled-ontology-28:AgentRole
+    
+    
+Class: untitled-ontology-28:AgentRole
+
+    
+Class: untitled-ontology-28:CampaignFinance
+
+    SubClassOf: 
+        untitled-ontology-28:hasContribution some untitled-ontology-28:Contribution,
+        untitled-ontology-28:provideCandidateRole some untitled-ontology-28:CandidateRole,
+        untitled-ontology-28:provideCommitteeRole some untitled-ontology-28:CommitteeRole,
+        untitled-ontology-28:subEventOf only untitled-ontology-28:PresidentialElection,
+        untitled-ontology-28:subEventOf max 1 untitled-ontology-28:PresidentialElection
+    
+    DisjointWith: 
+        untitled-ontology-28:Candidate, untitled-ontology-28:CandidateRole, untitled-ontology-28:Committee, untitled-ontology-28:CommitteeRole, untitled-ontology-28:Contribution, untitled-ontology-28:Contributor, untitled-ontology-28:ContributorRole, untitled-ontology-28:Election, untitled-ontology-28:PresidentialElection
+    
+    
+Class: untitled-ontology-28:Candidate
+
+    SubClassOf: 
+        untitled-ontology-28:Agent,
+         inverse (untitled-ontology-28:isAffiliatedWith) some untitled-ontology-28:Committee,
+         inverse (untitled-ontology-28:performedBy) some untitled-ontology-28:CandidateRole,
+         inverse (untitled-ontology-28:isAffiliatedWith) max 1 untitled-ontology-28:Committee,
+         inverse (untitled-ontology-28:isAffiliatedWith) max 1 owl:Thing,
+         inverse (untitled-ontology-28:performedBy) max 1 untitled-ontology-28:CandidateRole,
+         inverse (untitled-ontology-28:performedBy) max 1 owl:Thing,
+        untitled-ontology-28:hasCandidateID max 1 rdfs:Literal,
+        untitled-ontology-28:hasName max 1 rdfs:Literal
+    
+    DisjointWith: 
+        untitled-ontology-28:CampaignFinance, untitled-ontology-28:CandidateRole, untitled-ontology-28:Committee, untitled-ontology-28:CommitteeRole, untitled-ontology-28:Contribution, untitled-ontology-28:Contributor, untitled-ontology-28:ContributorRole, untitled-ontology-28:Election, untitled-ontology-28:PresidentialElection
+    
+    
+Class: untitled-ontology-28:CandidateRole
+
+    SubClassOf: 
+        untitled-ontology-28:AgentRole,
+         inverse (untitled-ontology-28:provideCandidateRole) some untitled-ontology-28:CampaignFinance,
+        untitled-ontology-28:performedBy only untitled-ontology-28:Candidate,
+        untitled-ontology-28:performedBy max 1 untitled-ontology-28:Candidate,
+        untitled-ontology-28:performedBy max 1 owl:Thing,
+         inverse (untitled-ontology-28:provideCandidateRole) max 1 untitled-ontology-28:CampaignFinance,
+         inverse (untitled-ontology-28:provideCandidateRole) max 1 owl:Thing
+    
+    DisjointWith: 
+        untitled-ontology-28:CampaignFinance, untitled-ontology-28:Candidate, untitled-ontology-28:Committee, untitled-ontology-28:CommitteeRole, untitled-ontology-28:Contribution, untitled-ontology-28:Contributor, untitled-ontology-28:ContributorRole, untitled-ontology-28:Election, untitled-ontology-28:PresidentialElection
+    
+    
+Class: untitled-ontology-28:Committee
+
+    SubClassOf: 
+        untitled-ontology-28:Agent,
+        untitled-ontology-28:isAffiliatedWith some untitled-ontology-28:Candidate,
+         inverse (untitled-ontology-28:performedBy) some untitled-ontology-28:CommitteeRole,
+        untitled-ontology-28:isAffiliatedWith only untitled-ontology-28:Candidate,
+        untitled-ontology-28:isAffiliatedWith max 1 untitled-ontology-28:Candidate,
+        untitled-ontology-28:isAffiliatedWith max 1 owl:Thing,
+         inverse (untitled-ontology-28:performedBy) max 1 untitled-ontology-28:CommitteeRole,
+         inverse (untitled-ontology-28:performedBy) max 1 owl:Thing,
+        untitled-ontology-28:hasAddress max 1 rdfs:Literal,
+        untitled-ontology-28:hasCity max 1 rdfs:Literal,
+        untitled-ontology-28:hasCommitteeID max 1 rdfs:Literal,
+        untitled-ontology-28:hasName max 1 rdfs:Literal,
+        untitled-ontology-28:hasState max 1 rdfs:Literal,
+        untitled-ontology-28:hasZipCode max 1 rdfs:Literal
+    
+    DisjointWith: 
+        untitled-ontology-28:CampaignFinance, untitled-ontology-28:Candidate, untitled-ontology-28:CandidateRole, untitled-ontology-28:CommitteeRole, untitled-ontology-28:Contribution, untitled-ontology-28:Contributor, untitled-ontology-28:ContributorRole, untitled-ontology-28:Election, untitled-ontology-28:PresidentialElection
+    
+    
+Class: untitled-ontology-28:CommitteeRole
+
+    SubClassOf: 
+        untitled-ontology-28:AgentRole,
+        untitled-ontology-28:performedBy some untitled-ontology-28:Committee,
+         inverse (untitled-ontology-28:provideCommitteeRole) some untitled-ontology-28:CampaignFinance,
+        untitled-ontology-28:performedBy only untitled-ontology-28:Committee,
+        untitled-ontology-28:performedBy max 1 untitled-ontology-28:Committee,
+        untitled-ontology-28:performedBy max 1 owl:Thing,
+         inverse (untitled-ontology-28:provideCommitteeRole) max 1 untitled-ontology-28:CampaignFinance,
+         inverse (untitled-ontology-28:provideCommitteeRole) max 1 owl:Thing
+    
+    DisjointWith: 
+        untitled-ontology-28:CampaignFinance, untitled-ontology-28:Candidate, untitled-ontology-28:CandidateRole, untitled-ontology-28:Committee, untitled-ontology-28:Contribution, untitled-ontology-28:Contributor, untitled-ontology-28:ContributorRole, untitled-ontology-28:Election, untitled-ontology-28:PresidentialElection
+    
+    
+Class: untitled-ontology-28:Contribution
+
+    SubClassOf: 
+        untitled-ontology-28:ProvideContributorRole some untitled-ontology-28:ContributorRole,
+         inverse (untitled-ontology-28:hasContribution) some untitled-ontology-28:CampaignFinance,
+        untitled-ontology-28:ProvideContributorRole only untitled-ontology-28:ContributorRole,
+        untitled-ontology-28:ProvideContributorRole max 1 untitled-ontology-28:ContributorRole,
+        untitled-ontology-28:ProvideContributorRole max 1 owl:Thing,
+         inverse (untitled-ontology-28:hasContribution) max 1 untitled-ontology-28:CampaignFinance,
+         inverse (untitled-ontology-28:hasContribution) max 1 owl:Thing,
+        untitled-ontology-28:hasContributionDate max 1 rdfs:Literal,
+        untitled-ontology-28:hasFileNumber max 1 rdfs:Literal,
+        untitled-ontology-28:hasFormType max 1 rdfs:Literal,
+        untitled-ontology-28:hasReceiptAmount max 1 rdfs:Literal,
+        untitled-ontology-28:hasTransactionID max 1 rdfs:Literal
+    
+    DisjointWith: 
+        untitled-ontology-28:CampaignFinance, untitled-ontology-28:Candidate, untitled-ontology-28:CandidateRole, untitled-ontology-28:Committee, untitled-ontology-28:CommitteeRole, untitled-ontology-28:Contributor, untitled-ontology-28:ContributorRole, untitled-ontology-28:Election, untitled-ontology-28:PresidentialElection
+    
+    
+Class: untitled-ontology-28:Contributor
+
+    SubClassOf: 
+        untitled-ontology-28:Agent,
+         inverse (untitled-ontology-28:performedBy) some untitled-ontology-28:ContributorRole,
+         inverse (untitled-ontology-28:performedBy) max 1 untitled-ontology-28:ContributorRole,
+         inverse (untitled-ontology-28:performedBy) max 1 owl:Thing,
+        untitled-ontology-28:hasCity max 1 rdfs:Literal,
+        untitled-ontology-28:hasEmployer max 1 rdfs:Literal,
+        untitled-ontology-28:hasName max 1 rdfs:Literal,
+        untitled-ontology-28:hasOccupation max 1 rdfs:Literal,
+        untitled-ontology-28:hasState max 1 rdfs:Literal,
+        untitled-ontology-28:hasZipCode max 1 rdfs:Literal
+    
+    DisjointWith: 
+        untitled-ontology-28:CampaignFinance, untitled-ontology-28:Candidate, untitled-ontology-28:CandidateRole, untitled-ontology-28:Committee, untitled-ontology-28:CommitteeRole, untitled-ontology-28:Contribution, untitled-ontology-28:ContributorRole, untitled-ontology-28:Election, untitled-ontology-28:PresidentialElection
+    
+    
+Class: untitled-ontology-28:ContributorRole
+
+    SubClassOf: 
+        untitled-ontology-28:AgentRole,
+        untitled-ontology-28:performedBy some untitled-ontology-28:Contributor,
+         inverse (untitled-ontology-28:ProvideContributorRole) some untitled-ontology-28:Contribution,
+        untitled-ontology-28:performedBy only untitled-ontology-28:Contributor,
+        untitled-ontology-28:performedBy max 1 untitled-ontology-28:Contributor,
+        untitled-ontology-28:performedBy max 1 owl:Thing,
+         inverse (untitled-ontology-28:ProvideContributorRole) max 1 untitled-ontology-28:Contribution,
+         inverse (untitled-ontology-28:ProvideContributorRole) max 1 owl:Thing
+    
+    DisjointWith: 
+        untitled-ontology-28:CampaignFinance, untitled-ontology-28:Candidate, untitled-ontology-28:CandidateRole, untitled-ontology-28:Committee, untitled-ontology-28:CommitteeRole, untitled-ontology-28:Contribution, untitled-ontology-28:Contributor, untitled-ontology-28:Election, untitled-ontology-28:PresidentialElection
+    
+    
+Class: untitled-ontology-28:Election
+
+    SubClassOf: 
+        untitled-ontology-28:atPlace max 1 rdfs:Literal,
+        untitled-ontology-28:atTime max 1 rdfs:Literal
+    
+    DisjointWith: 
+        untitled-ontology-28:CampaignFinance, untitled-ontology-28:Candidate, untitled-ontology-28:CandidateRole, untitled-ontology-28:Committee, untitled-ontology-28:CommitteeRole, untitled-ontology-28:Contribution, untitled-ontology-28:Contributor, untitled-ontology-28:ContributorRole
+    
+    
+Class: untitled-ontology-28:PresidentialElection
+
+    SubClassOf: 
+        untitled-ontology-28:Election,
+         inverse (untitled-ontology-28:subEventOf) some untitled-ontology-28:CampaignFinance,
+         inverse (untitled-ontology-28:subEventOf) max 1 untitled-ontology-28:CampaignFinance,
+         inverse (untitled-ontology-28:subEventOf) max 1 owl:Thing
+    
+    DisjointWith: 
+        untitled-ontology-28:CampaignFinance, untitled-ontology-28:Candidate, untitled-ontology-28:CandidateRole, untitled-ontology-28:Committee, untitled-ontology-28:CommitteeRole, untitled-ontology-28:Contribution, untitled-ontology-28:Contributor, untitled-ontology-28:ContributorRole
+    
+    
